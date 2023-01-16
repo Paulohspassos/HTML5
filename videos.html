@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias</title>
+</head>
+<body>
+    <h1>Vídeos</h1>
+    <h2>Inserindo vídeos localmente</h2>
+    <p>Outro tipo de mídia muito importante em sites nos dias de hoje são os vídeos.</p>
+    <p>Para inserir video podemos usar a tag &lt;video src="pasta/nome_do_video.formato"&gt;</p>
+    <p>Este video está hospedado no meu próprio servidor.</p>
+    <p>Para dimencionar o vídeo devemos usar o parâmetro 'width="000"', e para inserir controles usamos o parâmetro "controls"</p>
+    <video src="midias/video.mp4" width="560" controls></video>
+    <p>Outro parâmentro que é bom termos conhecimento é o 'poster="local_da_imagem.formato"', esse parâmetro irá inserir uma imagem padrão ao nosso video.</p>
+    <p>Para se inserir outros formatos do arquivo usamos a tag &lt;source&gt; sempre identificando o 'type="tipo_de_arquivo/formato"' para que todos os navegadores consigam abrir o arquivo que disponibilizaremos ao usuário, e sempre observar a ordem que os arquivos estão dispostos na pasta referênte ao arquivo.</p>
+    <p>O problema de se utilizar um arquivo tão grande como um video hospedado em nosso prórpio servidor, é o gasto com tráfego, pode causar gastos financeiros para o cliente que está hospedando o arquivo.</p>
+    <p>Podemos ter o vídeo hospedado no servidor onde a página está hospedada, porém a forma mais recomendada é no youtube.</p>
+    <h2>Incorporação de videos</h2>
+    <p>Para inserir um vídeo que está hospedado em outro local como o YouTube devemos inserir usando iframe bastando copiar o embeded direto da página que está hospedado.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/iWSjBBQbICA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <a href="index.html">Voltar</a>
+
+<!--Nos próximos exercícios tentarei utilizar mais recursos para melhorar o código.-->
+
+<footer>
+   <p>Página desenvolvida por <strong>Paulo Henrique dos Santos Passos</strong> no decorrer dos estudos de programação.<br><e-mail>paulohspassos@gmail.com</e-mail><br>Phone: +55 88 9.9436-2503</p>
+</footer>
+
+</body>
+</html>

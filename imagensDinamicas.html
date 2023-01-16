@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinâmicas</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Quando utilizamos imagens em documentos html, um dos desafios enfrentado pelos desenvolvedores é o dimensionamento dessas imagens para os diversos tamanhos de telas, para aproveitar melhor cada tela podemos ter imagens diferentes no documento para se adaptar melhor aos diversos dispositivos.</p>
+    <p>Para execultar essa funcionalidade de forma automatica usamos a tag &lt;picture&gt; ela permite várias funcionalidades das nossas imagens do documento.</p>
+    <p>Para se conseguir o resultado esperado devemos nos atentar a ordem das dimensões das imagens, ao escolher o tamanho da imagem base, por exemlo a pequena, ela deverá estar na tag &lt;img src="imagem_pequena.formato"&gt; na ultima linha dentro das tags &lt;picture&gt; e as imagens deverão obrigatoriamente acima na ordem decrescente, primeria linha &lt;source&gt; a imagem grande e abaixo, na outra tag a imagem pequena.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="Imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="Imagens/foto-m.png" type="image/png">
+        <img src="Imagens/foto-g.png" alt="foto grande">
+    </picture>
+
+    <a href="index.html">Voltar</a>
+
+<!--Nos próximos exercícios tentarei utilizar mais recursos para melhorar o código.-->
+
+<footer>
+   <p>Página desenvolvida por <strong>Paulo Henrique dos Santos Passos</strong> no decorrer dos estudos de programação.<br><e-mail>paulohspassos@gmail.com</e-mail><br>Phone: +55 88 9.9436-2503</p>
+</footer>
+
+</body>
+</html>

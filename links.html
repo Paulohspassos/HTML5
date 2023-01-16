@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+</head>
+<body>
+    <h1>Links Externos</h1>
+    <p>O fundamento básico da linguagem de marcação HTML são os links ou âncoras e para isso usamos a tag &lt;a&gt;, para podermos acessar o endereço usamos um parâmetro chamado 'href="https://www.site-desejado.com/outros_parâmetros', além desse outro parâmetro muito utilizado é o 'target="_blank"' que abrirá o site em outra aba no navegardor permitindo assim que o usuário não perca o seu site de vista.</p>
+    <p>Exemplo de link/âncora <a href="https:www.google.com/">Google</a></p>
+    <p>No exemplo acima o site do Google abrirá na mesma aba do seu site porém podemos abrir em outra aba utilizando o parâmetro 'target="_blank"' e isso é muito útil.</p>
+    <p><a href="https://www.youtube.com/" target="_blank" rel="noopener">YouTube</a></p>
+    <p>Outro parâmetro importante é o 'rel="external"' que indicará ao navegador que se trata de um link para uma página externa</p>
+    <h2>Links internos</h2>
+    <p>Podemos também criar um link para outra página do nosso site para isso devemos adicionar o nome do arquivo, nesse caso em href entre as aspas duplas o nome do arquivo exemplo: &lt;a href="pagina2.html" rel="next"&gt; com isso o link abrirá a página 2 do nosso site.</p>
+    <h2>Páginas em outras pastas</h2>
+    <p>Para acessar uma página que esteja dentro de uma pasta diferente da pasta do documento principal, devemos configurar o parâmetro 'href="..."' da seguinte maneira, 'href="nome_da_pasta/nome_do_arquivo.html"'.</p>
+    <p>Caso o documento principal esteja dentro de uma pasta e seja necessário voltar uma pasta, então deveremos usar essa configuração, 'href="../nome_da_pasta/nome_do-documento.html"'.</p>
+    <p>Exemplo:</p>
+    <p>Vá para a página 2 do documento que está na mesmo pasta do documento principal <a href="links_2.html" rel="next">Página 2</a></p>
+    <p>Agora entre na terceira página que está em uma pasta diferente da minha página principal <a href="links_3/links_3.html" rel="next">Página 3</a></p>
+    <p>Geralmente quando você faz um link para um artigo/página de terceiro usamos o parâmetro 'rel="nofollow"'.</p>
+
+    <a href="index.html">Voltar</a>
+
+<!--Nos próximos exercícios tentarei utilizar mais recursos para melhorar o código.-->
+
+<footer>
+   <p>Página desenvolvida por <strong>Paulo Henrique dos Santos Passos</strong> no decorrer dos estudos de programação.<br><e-mail>paulohspassos@gmail.com</e-mail><br>Phone: +55 88 9.9436-2503</p>
+</footer>
+
+</body>
+</html>

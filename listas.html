@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com Listas</h1>
+    <p>Um elemento muito importante em web sites são as listas, elas anumeram e relacionam outros elementos na pagina.</p>
+    <h2>Listas Ordenadas OL</h2>
+    <p>Para se obter uma lista ordenada por algum marcador usamos a tag &lt;ol&gt; ela adicionará uma marca como um número ou algarismo romano ou letra para ordenar essa lista. Listas ordenadas são aquelas que a ordem dos itens faz diferênça.</p>
+    <p>Para se inserir os itens da lista, usamos a tag &lt;li&gt; "list item".</p>
+    <ol>
+        <li>Acordar</li>
+        <li>Tomar café</li>
+        <li>Arrumar ambiente de estudos</li>
+        <li>Estudar</li>
+        <li>Praticar conteúdo estudado</li>
+    </ol>
+    <p>Para alterar o marcador utilizamos o parâmetro 'type="X"'.</p>
+    <ol type="A"><!--Tipos: 1, A, a, I, i-->
+        <li>Acordar</li>
+        <li>Tomar café</li>
+        <li>Arrumar ambiente de estudos</li>
+        <li>Estudar</li>
+        <li>Praticar conteúdo estudado</li>
+    </ol>
+    <p>Para se iniciar a lista em um valor diferente usamos o parãmentro 'start="X"'.</p>
+    <ol type="I" start="4">
+        <li>Preparar almoço</li>
+        <li>Arrumar cozinha</li>
+        <li>Estudar</li>
+        <li>Praticar conteúdo estudado</li>
+        <li>Preparar café da tarde</li>
+        <li>Receber minha esposa AMADA</li>
+    </ol>
+
+    <h2>Listas Não Ordenadas UL</h2>
+    <p>Para se obter uma lista sem uma hierarquia ou enumeração podemos usar a tag &lt;ul&gt; que adicionará um marcador por simbolo, esse tipo pode ser um circulo, ou quardado ou estrela ou outro marcador qualquer através do CSS.</p>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>SQL</li>
+    </ul>
+    <p>O parâmetro 'type="X"' se aplica também às listas não ordenadas.</p>
+    <ul type="square"><!--Tipos: disc, circle, square-->
+        <li>C</li>
+        <li>C++</li>
+        <li>C#</li>
+        <li>Java</li>
+    </ul>
+    <h2>Listas Mistas</h2>
+    <p>Nas listas mistas temos listas ordenadas e não ordenadas juntas em uma única lista.</p>
+    <ol>
+        <li>Linguagens de programação</li>
+        <ol type="a">
+            <li>C</li>
+            <li>C++</li>
+            <li>C#</li>
+            <li>JAVA</li>
+            <li>PHP</li>
+            <li>JavaScript</li>
+        </ol>
+
+        <li>linguagens de marcação</li>
+        <ol type="i">
+            <li>HTML 5</li>
+            <li>CSS</li>
+        </ol>
+    </ol>
+    <h2>Listas de Definições</h2>
+    <p>A lista de definição possui duas tags  a &lt;dt&gt; e a &lt;dd&gt; que estarão dentro da tag &lt;dl&gt;.</p>
+    <p>A tag &lt;dl&gt; (definition list), contém as tags &lt;dt&gt; (term definition) e abaixo teremos a tag &lt;dd&gt; (definição)</p>
+    <dl>
+        <dt>Termo</dt>
+        <dd>Descrição</dd>
+    </dl>
+
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação utilizada para se estruturar uma página web.</dd>
+        <dt>CSS</dt>
+        <dd>Folha de estilo para aprimorar o visual da página tornando-a mais atraente para os internautas.</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação utilizada para interação da página web com o usuário.</dd>
+    </dl>
+
+    <a href="index.html">Voltar</a>
+
+<!--Nos próximos exercícios tentarei utilizar mais recursos para melhorar o código.-->
+
+<footer>
+   <p>Página desenvolvida por <strong>Paulo Henrique dos Santos Passos</strong> no decorrer dos estudos de programação.<br><e-mail>paulohspassos@gmail.com</e-mail><br>Phone: +55 88 9.9436-2503</p>
+</footer>
+
+</body>
+</html>

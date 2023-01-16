@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citações e Códigos</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Código-fonte</h2>
+    <p>O comnado document.getElementById('teste') é escrito em linguagem de programação JavaScript, o problema dessa exibição é que fica confuso pelo espaçamento das letras, coisa que não acontece no código literal, para sanar esse problema usamos a tag &lt;code&gt; que organizará melhor os espaçamentos e indicará ao navegador que se trata deum fragmento de um Código-fonte, e ficará assim, <code>document.getElementById('teste')</code></p>
+    <p>Outro exemplo:</p>
+    <code>
+        num = int(input('Digite um número: '))
+        if num % 2 == 0;
+            print(f'O número {num} é PAR.')
+        else:
+        print(f'O número {num} é IMPAR.'')
+        print('Fim do programa')
+    </code>
+    <p>Dessa forma resolvemos o problema da legibilidade, mas temos outro problema que seria as indentações do código que pode ser resolvido com outra tag que conterá a tag &lt;code&gt;, a tag &lt;pre&gt;.</p>
+    <pre>
+        <code>
+            num = int(input('Digite um número: '))
+
+            if num % 2 == 0;
+                print(f'O número {num} é PAR.')
+            else:
+                print(f'O número {num} é IMPAR.'')
+
+            print('Fim do programa')
+        </code>
+    </pre>
+    <h2>Citações simples</h2>
+    <p>Para se destacar algum texto que foi citado por outra pessoa ou um trecho de um livro ou outro texto que não seja de sua autoria podemos usar a tag &lt;q&gt; dessa forma o navegador e os dispositivos de busca entenderão que se trata de uma citação dando valor semântico ao trecho como no exemplo: <q>O computador é um burro muito rápido...</q>, frase dita pelo pai de um instrutor de informática</p>
+    <h2>Citações completas</h2>
+    <p>No caso de citar um livro ou similia usamos a tag &lt;blockquote&gt; com o parâmentro 'cite="xxxx"'que conterá o endereço web que o livro está, dessa forma a sintaxe ficará assim: &lt;blockquote cite="https//www.endereço_do_livro.com/outros_parametros/"&gt;, exemplo da tag sendo usada.</p>
+    <p>No livro "HTML5, A linguagem de marcação que revolucionou o século", o autor diz: <blockquote cite="https://www.google.com.br/books/edition/HTML5_2%C2%AA_Edi%C3%A7%C3%A3o/f7JVBQAAQBAJ?hl=pt-BR&gbpv=1&dq=HTML&printsec=frontcover">Atributos gloais são aqueles comuns a todos os elemento da html.</blockquote></p>
+    <h2>Abreviações</h2>
+    <p>Quando queremos inserir uma legenda sobre uma sigla utilizamos a tag &lt;abbr&gt;, assim toda vez que o usuário posicionar o ponteiro do mouse sobre a sigla aparecerá o significado da sigla.</p>
+    <p>No estudo de <abbr title="HiperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheet">CSS</abbr> aprendemos a estruturar e estilizar páginas web</p>
+    <h2>Texto invertido</h2>
+    <p>Podemos também utilizar recursos "inúteis" com html5 que seria inverter um texto ao utilizarmos a tag &lt;bdo&gt; como no <bdo dir="rtl">exemplo</bdo>.</p>
+
+    <a href="index.html">Voltar</a>
+
+<!--Nos próximos exercícios tentarei utilizar mais recursos para melhorar o código.-->
+
+<footer>
+   <p>Página desenvolvida por <strong>Paulo Henrique dos Santos Passos</strong> no decorrer dos estudos de programação.<br><e-mail>paulohspassos@gmail.com</e-mail><br>Phone: +55 88 9.9436-2503</p>
+</footer>
+
+</body>
+</html>
