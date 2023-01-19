@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+            width: 500px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+        #container{
+            overflow-x:scroll;
+        }
+    </style>
+</head>
+<body>
+    <h1>Responsividade em tabelas</h1>
+    <p>A responsividade é fundamental em qualquer conteúdo da web nos dias de hoje e esse recurso não poderia deixar de fora as tabelas afinal elas são consultadas em todos os tipos de telas também, então vamos ver como se emprega a responsividade à tabelas.</p>
+    <p>Para se iserir essa configuração a nossas tabelas vamos selecionar a tabela toda da tag inicial table até a tag de fechamento e encapsula-la em uma div, após vamos dar uma id a essa div e no CSS acrecentar o parâmetro "overflow-x: auto;" isso criará uma outra janela e a rolagem lateral será apenas na tabela e não na página toda.</p>
+    <div id="container">
+        <table>
+            <colgroup>
+                <col class="cnome">
+                <col class="csexo">
+                <col class="cidade">
+                <col class="cprof">
+            </colgroup>
+            <caption>Cadastro</caption>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+            <tr>
+                <td>Carla Rejane</td>
+                <td>F</td>
+                <td>34</td>
+                <td>Enfermeira</td>
+            </tr>
+            <tr>
+                <td>Paulo Henrique</td>
+                <td>M</td>
+                <td>47</td>
+                <td>Programador</td>
+            </tr>
+            <tr>
+                <td>Maria Geralda</td>
+                <td>F</td>
+                <td>66</td>
+                <td>Aposentada</td>
+            </tr>
+            <tr>
+                <td>Rodrigo Candido</td>
+                <td>M</td>
+                <td>41</td>
+                <td>Técnico de Manutenção</td>
+            </tr>
+            <tr>
+                <td>Luciano Nunes</td>
+                <td>M</td>
+                <td>38</td>
+                <td>Empresário</td>
+            </tr>
+        </table>
+    </div>
+    <a href="tabelas05.html">Anterior</a>
+</body>
+</html>

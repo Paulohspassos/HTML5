@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table {
+            width: 200px;
+            border-collapse: collapse;
+        }
+
+        .linha {
+            background-color: lightgrey;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas em HTML5</h1>
+    <p>Autilização de tabelas em páginas html já foi mais frequente no passado porém ainda é um recurso utilizavel para organizar conteúdos sem utilizar CSS, claro que sempre é interessante essa organização pelo CSS ou outros como queery, mas como o recurso ainda é válido, vale a pena obter esse conhecimento.</p>
+    <h3>NUNCA UTILIZE TABELAS PARA CRIAR A ESTRUTURA DO NOSSO SITE!!!</h3>
+    <h2>Uso correto</h2>
+    <p>As tabelas são extremamente importantes e utilizados em sites principalmente aqueles que precisa apresentar dados como listas ou estatisticas entre outros.</p>
+    <p>A anatomia basica de uma tabela é constituído por linhas e colunas (rows and columns) e para se inserir ao corpo do nosso site basta inseri-los através da tag &lt;table&gt;, lembrando que as tabelas mais simples têm a seguinte hierarquia:</p>
+    <ul>
+        <li>TABLE = tabela</li>
+        <ul>
+            <li>TABLE ROW = linha de tabela</li>
+            <ul>
+                <li>TABLE HEADER = cabeçalho de tabela</li>
+                <li>TABLE DATA = dado de tabela</li>
+            </ul>
+        </ul>
+    </ul>
+    <p>Agora criando a tabela inserimos a tag "table" e dentro da abertura e fechamento dessa tag inserimos outra tag que é a &lt;tr&gt; que é a linha da nossa tabela, dentro da abertura e fechamento da tag "tr" inserimos a tag &lt;td&gt; que é a celula, ou seja vamos inserir quantas celular necessitarmos cada uma em uma coluna, para inserir mais linhas basta inserirmais tags "tr".</p>
+    <table>
+        <tr class="linha">
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr>
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr class="linha">
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+        <tr>
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
+    </table>
+    <p>Para se inserir bordas à nossa tabela devemos inserir bordas à nossa tabela, para isso deveremos usar o seguinte código.</p>
+    <pre>
+        <code>
+            table {
+                width: 200px;
+                border-collapse: collapse;
+            }
+    
+            .linha {
+                background-color: lightgrey;
+            }
+    
+            td {
+                border: 1px solid black;
+                padding: 5px;
+                text-align: center;
+            }
+        </code>
+    </pre>
+    <p>Para que as linhas da nossa tabela fiquem únicas e não duplas devemos utilizar a configuração "border-collapse: collapse;", por padrão vem com o valor "separate".</p>
+    <p>O fechamento das tags tr e td são opcionais.</p>
+    <p>Para alinha verticalmente o conteúdo da nossa tabela podemos usar a configuração "vertical-align:" com os valores top, middle ou bottom</p>
+    <a href="tabelas02.html" rel="next">Próximo</a>
+</body>
+</html>

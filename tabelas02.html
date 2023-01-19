@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas grandes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+        .num {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas Grandes</h1>
+    <p>Quando precisamos trabalhar com tabelas maiores temos alguns procedimentos diferentes dos convencionais que já vimos anteriormente.</p>
+    <p>A estrutura básica de tabelas grandes é a seguinte:</p>
+    <ul>
+        <li>CAPTION</li>
+        <li>TABLE</li>
+        <ul>
+            <li>THEAD</li>
+            <ul>
+                <li>TR</li>
+                <li>TH</li>
+                <li>TD</li>
+            </ul>
+            <li>TBODY</li>
+            <ul>
+                <li>TR</li>
+                <li>TH</li>
+                <li>TD</li>
+            </ul>
+            <li>TFOOT</li>
+            <ul>
+                <li>TR</li>
+                <li>TH</li>
+                <li>TD</li>
+            </ul>
+        </ul>
+    </ul>
+    <p>Vamos construir uma tabela maior agora.</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Estado</th>
+                <th>População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">46 024 937</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20 732 660</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">16 615 526</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="num">4 108 508</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total de Habitantes</th>
+                <td>87 481 631</td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>O caption da tabela não possui tr nem td, ela é apenas a legenda da tabela</p>
+    <a href="tabelas.html">Anterior</a>
+    <a href="tabelas03.html" rel="next">Próximo</a>
+</body>
+</html>

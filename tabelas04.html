@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+            width: 500px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+        .cnome {
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <h1>Colunas em tabelas</h1>
+    <p>Quando houver a necessidade de destacar colunas em tabelas deveremos usar a tag &lt;colgroup%&gt;, nela vamos inserir tags &lt;col&gt; cada tag "col" será indexada a uma coluna assim podemos inserir de forma automática classes, ao fazermos isso pode selecionar uma coluna inteira apenas com essa configuração.</p>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprof">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Carla Rejane</td>
+            <td>F</td>
+            <td>34</td>
+            <td>Enfermeira</td>
+        </tr>
+        <tr>
+            <td>Paulo Henrique</td>
+            <td>M</td>
+            <td>47</td>
+            <td>Programador</td>
+        </tr>
+        <tr>
+            <td>Maria Geralda</td>
+            <td>F</td>
+            <td>66</td>
+            <td>Aposentada</td>
+        </tr>
+        <tr>
+            <td>Rodrigo Candido</td>
+            <td>M</td>
+            <td>41</td>
+            <td>Técnico de Manutenção</td>
+        </tr>
+        <tr>
+            <td>Luciano Nunes</td>
+            <td>M</td>
+            <td>38</td>
+            <td>Empresário</td>
+        </tr>
+    </table>
+    <p>O código para esse recurso é o seguinte.</p>
+    <pre>
+        <code>
+            HTML 
+            &lt;table&gt;
+                &lt;colgroup&gt;
+                    &lt;col class="cnome"&gt;
+                    &lt;col class="csexo"&gt;
+                    &lt;col class="cidade"&gt;
+                    &lt;col class="cprof"&gt;
+                &lt;/colgroup&gt;
+                &lt;caption&gt;Cadastro&lt;/caption&gt;
+                &lt;tr&gt;
+                    &lt;th scope="col"&gt;Nome&lt;/th&gt;
+                    &lt;th scope="col"&gt;sexo&lt;/th&gt;
+                    &lt;th scope="col"&gt;Idade&lt;/th&gt;
+                    &lt;th scope="col"&gt;Profissão&lt;/th&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Carla Rejane&lt;/td&gt;
+                    &lt;td&gt;F&lt;/td&gt;
+                    &lt;td&gt;34&lt;/td&gt;
+                    &lt;td&gt;Enfermeira&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Paulo Henrique&lt;/td&gt;
+                    &lt;td&gt;M&lt;/td&gt;
+                    &lt;td&gt;47&lt;/td&gt;
+                    &lt;td&gt;Programador&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Maria Geralda&lt;/td&gt;
+                    &lt;td&gt;F&lt;/td&gt;
+                    &lt;td&gt;66&lt;/td&gt;
+                    &lt;td&gt;Aposentada&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Rodrigo Candido&lt;/td&gt;
+                    &lt;td&gt;M&lt;/td&gt;
+                    &lt;td&gt;41&lt;/td&gt;
+                    &lt;td&gt;Técnico de Manutenção&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Luciano Nunes&lt;/td&gt;
+                    &lt;td&gt;M&lt;/td&gt;
+                    &lt;td&gt;38&lt;/td&gt;
+                    &lt;td&gt;Empresário&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+
+            CSS 
+
+            &lt;style&gt;
+                body {
+                    font-family: sans-serif;
+                }
+                table {
+                    border-collapse: collapse;
+                    width: 500px;
+                }
+                th, td {
+                    border: 1px solid black;
+                    padding: 8px;
+                }
+                .cnome {
+                    background-color: chartreuse;
+                }
+            &lt;/style&gt;
+        </code>
+    </pre>
+    <a href="tabelas03.html">Anterior</a>
+    <a href="tabelas05.html">Próximo</a>
+</body>
+</html>

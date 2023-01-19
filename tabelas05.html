@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesclagem de células</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 300px;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mesclando células</h1>
+    <P>Existem expansões de linhas e de colunas, para expandir em linha devemos usar a configuração 'colspan="2"' que será inserido inline, ou seja, dentro da atribuição da tag.</P>
+    <p>Para a expansão de coluna a configuração será </p>
+    <table>
+            <tr>
+                <td>A</td>
+                <td>B</td>
+                <td colspan="2">C</td>
+            </tr>
+            <tr>
+                <td rowspan="2">D</td>
+                <td>E</td>
+                <td>F</td>
+                <td>G</td>
+            </tr>
+            <tr>
+                <td>I</td>
+                <td>J</td>
+                <td>K</td>
+            </tr>
+            <tr>
+                <td>L</td>
+                <td>M</td>
+                <td>N</td>
+                <td>O</td>
+            </tr>
+    </table>
+    <a href="tabelas04.html">Anterior</a>
+    <a href="tabelas06.html">Próximo</a>
+</body>
+</html>
